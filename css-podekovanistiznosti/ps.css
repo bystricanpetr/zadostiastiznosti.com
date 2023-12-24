@@ -1,0 +1,81 @@
+body{
+	background-image: url("obrazky/strukturovaný.png");
+	width: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+h1 {
+	border: 2px solid white;
+	border-radius: 8px;
+	padding: 25px;
+	background-color: white;
+	color: black;
+	text-align: center;
+	font-family:Arial, sans-serif;
+	font-size: 90px;
+	margin-top: 2px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 20px;
+}
+h2 {
+	border: 2px solid white;
+	border-radius: 8px;
+	padding: 10px;
+	background-color: white;
+	color: black;
+	text-align: center;
+	font-family:Arial, sans-serif;
+	font-size: 50px;
+	margin-top: 00px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 00px;
+}
+h3 {
+	border: 2px solid white;
+	border-radius: 0px;
+	padding: 25px;
+	background-color: white;
+	color: black;
+	text-align: center;
+	font-family:Arial, sans-serif;
+	font-size: 30px;
+	margin-top: 50px;
+	margin-bottom: 00px;
+}
+p {
+	border: 2px solid white;
+	border-radius: 0px;
+	padding: 25px;
+	background-color: white;
+	color: black;
+	text-align: center;
+	font-family:Arial, sans-serif;
+	font-size: 30px;
+	margin-top: 00px;
+	margin-bottom: 50px;
+}
+.styl1 {
+	border: 2px solid white;
+	border-radius: 8px;
+	padding: 5px;
+	background-color: white;
+	margin-top: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+.styl2 {
+	border: 2px solid #38b6ff;
+	border-radius: 8px;
+	padding: 20px;
+	background-color: #38b6ff;
+	margin-left: 700px;
+	margin-right: 700px;
+	margin-top: 350px;
+	
+}

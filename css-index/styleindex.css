@@ -1,0 +1,65 @@
+h1 {
+	background-color: white;
+	color: black;
+    font-family:Arial, sans-serif;
+	border: 2px solid white;
+	border-radius: 8px;
+	padding: 50px;
+	margin: 70px 200px 85px 200px;
+	text-align: center;
+	max-width: none;
+    max-height: none;
+	resize: none;
+}
+.button1 {
+	background-color: white;
+	font-family:Arial, sans-serif;
+	font-size: 40px;
+	border: 2px solid white;
+	border-radius: 8px;
+	padding: 130px;
+	color: black;
+	text-align: center;
+	margin-right: 10px;
+	cursor: pointer;
+	max-width: none;
+    max-height: none;
+    resize: none;
+	}
+.button2 {
+	background-color: white;
+	font-family:Arial, sans-serif;
+	font-size: 40px;
+	border: 2px solid white;
+	border-radius: 8px;
+	padding: 130px;
+	color: black;
+	text-align: center;
+	margin-left: 10px;
+	cursor: pointer;
+	max-width: none;
+    max-height: none;
+	resize: none;
+}
+.flex-parent {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
+body{
+	background-image: url("obrazky/cisty.png");
+	width: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+body {
+  overflow: hidden;
+}
+
+
+	

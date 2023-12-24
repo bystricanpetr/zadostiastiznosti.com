@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Žádosti</title>
+  <link rel="stylesheet" href="css(žádosti)/styležádost.css">
+  <script>
+    function odeslatStiznost() {
+
+      var jmeno = document.getElementById('name').value;
+      var prijmeni = document.getElementById('sirname').value;
+      var pohlavi = document.getElementById('gender').value;
+      var narozeni = document.getElementById('nar').value;
+      var pozice = document.getElementById('zaměstnání').value;
+      var telefon = document.getElementById('tel').value;
+      var email = document.getElementById('email').value;
+      var predmet = document.getElementById('predmet').value;
+      var priorita = document.getElementById('priorita').value;
+      var popis = document.getElementById('popisžadosti').value;
+      var souhlas = document.getElementById('souhlas').checked;
+
+      if (popis.split(/\s+/).length < 50) {
+        alert("Popis žádosti musí obsahovat minimálně 50 slov.");
+        return;
+      }
+      if (!email.includes("@") || !/.+@.+\..+/.test(email)) {
+        alert("Nesprávný formát emailu.");
+        return;
+      }
+      if (!/^[0-9+\s]+$/.test(telefon)) {
+        alert("Nesprávný formát telefonního čísla.");
+        return;
+      }
+      if (
+        jmeno === '' ||
+        prijmeni === '' ||
+        pohlavi === '' ||
+        narozeni === '' ||
+        pozice === '' ||
+        telefon === '' ||
+        email === '' ||
+        predmet === '' ||
+        priorita === '' ||
+        popis === '' ||
+        !souhlas
+      ) {
+        alert('Vyplňte všechna pole a souhlas s podmínkami.');
+      } else {
+        window.location.href = 'poděkovánízadost.html';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Žádost</h1>
+  <label for="name">Jméno</label>
+  <input type="text" id="name">
+  <label for="sirname">Příjmení</label>
+  <input type="text" id="sirname">
+  <label for="gender">Pohlaví</label>
+  <select id="gender">
+    <option value="">Vyberte pohlaví</option>
+    <option value="Muž">Muž</option>
+    <option value="Žena">Žena</option>
+  </select>
+  <label for="nar">Datum narození</label>
+  <input type="text" id="nar">
+  <label for="zaměstnání">Pozice pro zadání žádosti (např.:Učitel)</label>
+  <input type="text" id="zaměstnání">
+  <label for="tel">Telefon</label>
+  <input type="text" id="tel">
+  <label for="email">E-mail</label>
+  <input type="text" id="email">
+  <label for="predmet" class="styl4">Předmět žádosti</label>
+  <label class="styl2" for="priorita">Priorita</label>
+  <div class="horizontal-container">
+    <input class="styl1" type="text" id="predmet">
+    <select id="priorita" class="styl3">
+      <option value="">Zvolte prioritu</option>
+      <option value="Nízká">Nízká</option>
+      <option value="Střední">Střední</option>
+      <option value="Vysoká">Vysoká</option>
+    </select>
+  </div>
+  <label for="popisžadosti">Popis Žádosti</label>
+  <textarea id="popisžadosti" name="popisžadosti" rows="9" cols="50"></textarea>
+  <div class="horizontal-container">
+    <label class="style2" for="souhlas"><a href="podminky.html">Souhlas s podmínkami</a></label>
+    <input class="style1" type="checkbox" id="souhlas">
+    <button type="button" onclick="odeslatStiznost()" value="Odeslat">Odeslat!</button>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+body{
+	background-image: url("obrazky/strukturovaný.png");
+	width: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	background-color: white;
+	color: black;
+    font-family:Arial, sans-serif;
+	font-size: 40px;
+	border: 2px solid white;
+	border-radius: 8px;
+	padding: 50px;
+	margin: 30px 600px 15px 600px;
+	text-align: center;
+}
+textarea {
+	font-family:Arial, sans-serif;
+	font-size: 18px;
+	color: black;
+	margin-bottom: 8px;
+	margin-left: 600px;
+	margin-right: 600px;
+	display: block;
+	border: 2px solid white;
+	border-radius: 8px;
+	padding: 5px;
+	width: 40%;
+}
+#popisžadosti {
+  resize: none;
+}
+input {
+    font-family:Arial, sans-serif;
+	font-size: 18px;
+	color: black;
+	margin-bottom: 8px;
+	margin-left: 600px;
+	margin-right: 600px;
+	display: block;
+	border: 2px solid white;
+	border-radius: 8px;
+	padding: 5px;
+	width: 40%;
+}
+select {
+	display: block;
+	margin-bottom: 8px;
+	margin-left: 600px;
+	margin-right: 600px;
+	border: 2px  solid white;
+	border-radius: 8px;
+	padding: 5px;
+	width: 40%;
+}
+label {
+	margin-bottom: 8px;
+	margin-left: 600px;
+	margin-right: 600px;
+	margin-left: 600px;
+	font-family:Arial, sans-serif;
+	white-space: nowrap;
+}
+.horizontal-container {
+  display: flex;
+  align-items: center;
+}
+.styl1 {
+	margin-left: 600px;
+	margin-right: 5px;
+	width: 20%;
+}
+.styl2 {
+	margin-left: 105px;
+	margin-right: 5px;
+}
+.styl3 {
+	margin-left: 10px;
+	margin-right: 5px;
+	width: 19%;
+	padding: 5px;
+}
+.styl4 {
+	margin-left: 600px;
+	margin-right: 200px;
+}
+.style1 {
+	margin-bottom: 40px;
+	margin-left: 20px;
+	margin-right: 5px;
+	margin-top: 35px;
+}
+button {
+	border: 2px solid white;
+	border-radius: 8px;
+	padding: 10px;
+	margin-bottom: 50px;
+	margin-left: 450px;
+	margin-right: 600px;
+	margin-top: 20px;
+	text-align: center;
+	background-color: white;
+	color: black;
+    font-family:Arial, sans-serif;
+	font-size: 20px;
+}
+.style2 {
+	margin-right: 5px;
+}

@@ -1,0 +1,94 @@
+h1{
+	background-color: white;
+	color: black;
+    font-family:Arial, sans-serif;
+	font-size: 40px;
+	border: 2px solid white;
+	border-radius: 8px;
+	padding: 50px;
+	margin: 50px 600px 50px 600px;
+	text-align: center;
+}
+body{
+	background-image: url("obrazky/strukturovaný.png");
+	width: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+}
+input{
+	font-family:Arial, sans-serif;
+	font-size: 18px;
+	color: black;
+	margin-bottom: 8px;
+	margin-left: 600px;
+	margin-right: 600px;
+	display: block;
+	border: 2px solid white;
+	border-radius: 8px;
+	padding: 5px;
+}
+select{
+	font-family:Arial, sans-serif;
+	font-size: 18px;
+	color: black;
+	margin-bottom: 8px;
+	margin-left: 600px;
+	margin-right: 600px;
+	display: block;
+	border: 2px solid white;
+	border-radius: 8px;
+	padding: 5px;
+}
+label{
+	margin-left: 600px;
+	font-family:Arial, sans-serif;
+	white-space: nowrap;
+}
+textarea {
+	font-family:Arial, sans-serif;
+	font-size: 18px;
+	color: black;
+	margin-bottom: 8px;
+	margin-left: 600px;
+	margin-right: 600px;
+	display: block;
+	border: 2px solid white;
+	border-radius: 8px;
+	padding: 5px;
+}
+#popisstiznosti {
+  resize: none;
+}
+option {
+	border: 2px solid white;
+	border-radius: 8px;
+	padding: 5px;
+}
+button {
+	border: 2px solid white;
+	border-radius: 8px;
+	padding: 10px;
+	margin-bottom: 50px;
+	margin-left: 485px;
+	margin-right: 600px;
+	margin-top: 20px;
+	text-align: center;
+	background-color: white;
+	color: black;
+    font-family:Arial, sans-serif;
+	font-size: 20px;
+}
+.style1 {
+	margin-bottom: 50px;
+	margin-left: 30px;
+	margin-right: 5px;
+	margin-top: 49px;
+}
+.horizontal-container {
+  display: flex;
+  align-items: center;
+}

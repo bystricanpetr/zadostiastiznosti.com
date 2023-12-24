@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Stížnosti</title>
+  <link rel="stylesheet" href="css-stiznosti/stylestiznost.css">
+  <script>
+    function odeslatStiznost() {
+      var jmeno = document.getElementById("name").value;
+      var prijmeni = document.getElementById("sirname").value;
+      var datumNarozeni = document.getElementById("birthday").value;
+      var pohlavi = document.getElementById("gender").value;
+      var email = document.getElementById("email").value;
+      var telefon = document.getElementById("telephone").value;
+      var predmetStiznosti = document.getElementById("predmět").value;
+      var popisStiznosti = document.getElementById("popisstiznosti").value;
+      var souhlas = document.getElementById("souhlas").checked;
+
+      if (popisStiznosti.split(/\s+/).length < 50) {
+        alert("Popis stížnosti musí obsahovat minimálně 50 slov.");
+        return;
+      }
+      if (!email.includes("@") || !/.+@.+\..+/.test(email)) {
+        alert("Nesprávný formát e-mailu.");
+        return;
+      }
+      if (!/^[0-9+\s]+$/.test(telefon)) {
+        alert("Nesprávný formát telefonního čísla.");
+        return;
+      }
+
+      if (jmeno === "" || prijmeni === "" || datumNarozeni === "" || pohlavi === "" || email === "" || telefon === "" || predmetStiznosti === "" || popisStiznosti === "" || !souhlas) {
+        alert("Vyplňte všechna pole a souhlas s podmínkami.");
+      } else {
+        window.location.href = 'podekovanistiznost.html';
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Stížnost</h1>
+  <label for="name">Jméno</label>
+  <input type="text" id="name">
+  <label for="sirname">Příjmení</label>
+  <input type="text" id="sirname">
+  <label for="birthday">Datum Narození</label>
+  <input type="text" id="birthday">
+  <label for="gender">Pohlaví</label>
+  <select id="gender">
+    <option value="">Vyberte pohlaví</option>
+    <option value="Muž">Muž</option>
+    <option value="Žena">Žena</option>
+  </select>
+  <label for="email">E-mail</label>
+  <input type="text" id="email">
+  <label for="telephone">Telefonní číslo</label>
+  <input type="text" id="telephone">
+  <label for="predmět">Předmět Stížnosti</label>
+  <input type="text" id="predmět">
+  <label for="popisstiznosti">Popis stížnosti</label>
+  <textarea id="popisstiznosti" name="popisstiznosti" rows="7" cols="50"></textarea>
+  <div class="horizontal-container">
+    <label for="souhlas"><a href="podminky.html">Souhlas s podmínkami</a></label>
+    <input class="style1" type="checkbox" id="souhlas">
+    <button type="button" onclick="odeslatStiznost()" value="Odeslat">Odeslat!</button>
+  </div>
+</body>
+
+</html>
